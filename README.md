@@ -1,6 +1,6 @@
 ## PHPCassandra - The Simple Cassandra PHP client library
 
-PHPCassandra is a PHP Cassandra library that lets you get more done with fewer lines of code. This is faster and lightweight client library, you dont have to remember all Cassandra command when working with PHP, just call related PHPCassandra function and pass required parameters and you are done.
+PHPCassandra is a PHP Cassandra library that lets you get more done with fewer lines of code. This is faster and lightweight client library, you dont have to remember all Cassandra command when working with PHP, just call related methods, pass required parameters and you are done.
 
 ## Requirements
 
