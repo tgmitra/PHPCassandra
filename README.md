@@ -14,7 +14,7 @@ Before you install CassandraPHP do the following
 
     2. Download casandra from http://www.planetcassandra.org/cassandra/ and install.
 
-    3. Now DataStax PHP Driver for Apache Cassandra from https://datastax.github.io/php-driver/
+    3. Install DataStax PHP Driver for Apache Cassandra from https://datastax.github.io/php-driver/
 
 Now drag and drop the **/CassandraPHP** and **example.php** (optional) files into your application's directories. Now to utilize this class, first import PHPCassandra into your project, and require it.
 ```
