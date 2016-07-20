@@ -28,7 +28,7 @@ Simple initialization:
 $Cassandra = new CassandraPHP();
 ```
 
-### Handle keyspace
+### Example Usage
 
 Before you start anything its better to create your keyspace, to do this just call the following code to create keyspace with 'member' name and 'SimpleStrategy' replication class
 ```
@@ -44,8 +44,6 @@ Now you are good to go with `main` keyspace, just connect the same with this
 ```
 $Cassandra->ConnectCluster( 'members' );
 ```
-
-### Data Handle
 
 Now create table user_master with userId as primary key
 ```
