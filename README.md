@@ -45,7 +45,7 @@ Now you are good to go with `main` keyspace, just connect the same with this
 $Cassandra->ConnectCluster( 'members' );
 ```
 
-### Create Table
+### Data Handle
 
 Now create table user_master with userId as primary key
 ```
