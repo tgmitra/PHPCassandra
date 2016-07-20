@@ -9,7 +9,7 @@ $Cassandra = new CassandraPHP();
 $Cassandra->ConnectCluster( 'members' );
 
 /* Create Keyspace */
-$Cassandra->Keyspace()->Create('main', 'SimpleStrategy', 1);
+$Cassandra->Keyspace()->Create('main', 'SimpleStrategy');
 
 /* Get list of keyspaces */
 $Result = $Cassandra->Keyspace()->GetList();
@@ -33,7 +33,7 @@ $Cassandra->Table()->DropIndex('name');
 $Cassandra->Table()->DropTable('scores');
 
 /* Insert statement for table, also here the field email is a list, so this field can accept multiple values  */
-    $Cassandra->Table->Insert('user_master', array('name'=>'Alex Dorner', 'email'=>array('alex@example.com')));
+$Cassandra->Table->Insert('user_master', array('name'=>'Alex Dorner', 'email'=>array('alex@example.com')));
 
 /* Simple Data Insert */
 $Cassandra->Table()->Insert('user_master', array('user_id'=>2, 'user_name'=>'Julian Diaz', 'user_city'=>'Vienna'));
