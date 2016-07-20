@@ -76,7 +76,7 @@ $Cassandra->Table()->DropTable('user_master');
 
 Now its time to insert some data on table: user_master, lets do the following to insert a row 
 ```
-$Cassandra->Table()->Insert('user_master', array('user_id'=>2, 'user_name'=>'Julian Diaz', 'user_city'=>'Vienna'));
+$Cassandra->Table()->Insert('user_master', array('user_id'=>2, 'user_name'=>'Julian', 'user_city'=>'Vienna'));
 ```
 
 Or use below to insert a row along a list item available in row, for example `email` is used below as list
@@ -114,8 +114,8 @@ $Cassandra->Table()->Delete('user_master', array('user_id' => 2), array('user_na
 If you like you can execute batch statement on Cassandra as well, please note only insert, update and delete is allowed on batch statement
 ```
 $Cassandra->Table()->Batch(array(
-    array('INSERT' => array('user_master', array('user_id' => 3, 'user_name'=>'Robert Braunstein', 'user_city'=>'Paris'))),
-    array('INSERT' => array('user_master', array('user_id' => 4, 'user_name'=>'Nicholas Braun', 'user_city'=>'Rome'))),
+    array('INSERT' => array('user_master', array('user_id' => 3, 'user_name'=>'Robert', 'user_city'=>'Paris'))),
+    array('INSERT' => array('user_master', array('user_id' => 4, 'user_name'=>'N Braun', 'user_city'=>'Rome'))),
     array('UPDATE' => array('user_master', array('user_name'=>'Miriam Downey'), array('user_id' => 1))),
     array('DELETE' => array('user_master', array('user_id' => 2), array('user_city'))),
 ), 'BATCH_LOGGED');
